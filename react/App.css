@@ -1,0 +1,102 @@
+/*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2rem;
+  background-color: #737373;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0px 2px 20px #e1e5ee;
+  background: #fff;
+  border-radius: 0.5rem;
+  position: relative;
+  width: 350px;
+  transition: 250ms all ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 2px 25px #e1e5ee;
+}
+.card__bannerimg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 14rem;
+  width: 100%;
+}
+.card__category {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background: red;
+  padding: 0.5rem 1.3rem 0.5rem 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  border-radius: 0 2rem 2rem 0;
+}
+.card__category-popular {
+  background: #1774de;
+}
+.card__category-technology {
+  background: #5924cc;
+}
+.card__category-psychology {
+  background: #ff3939;
+}
+.card__body {
+  margin: 1rem;
+}
+.card__hashtag {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4d97b2;
+}
+.card__title {
+  line-height: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+.card__description {
+  color: #4f546c;
+  font-size: 0.9rem;
+}
+.card__profile {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+.card__profileimg {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.card__profileinfo {
+  margin-left: 1rem;
+}
+.card__profilename {
+  font-size: 1rem;
+}
+.card__profilefollowers {
+  color: #4f546c;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=App.css.map */

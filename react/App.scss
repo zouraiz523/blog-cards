@@ -1,0 +1,133 @@
+/*   color variables */
+$clr-primary: #0e48fe;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+$clr-link: #4d97b2;
+$clr-popular: #ef257a;
+$clr-technology: #651fff;
+$clr-psychology: #e85808;
+
+/*   border radius */
+$radius: 0.2rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2rem;
+background-color:#737373;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0px 2px 20px $clr-gray300;
+  background: white;
+  border-radius: 0.5rem;
+  position: relative;
+  width: 350px;
+  transition: 250ms all ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 2px 25px $clr-gray300;
+  }
+
+  &__bannerimg {
+    object-fit: cover;
+    height: 14rem;
+    width: 100%;
+  }
+
+  &__category {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background: red;
+    padding: 0.5rem 1.3rem 0.5rem 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    border-radius: 0 2rem 2rem 0;
+
+    &-popular {
+      background: $clr-popular;
+    }
+
+    &-technology {
+      background: $clr-technology;
+    }
+
+    &-psychology {
+      background: $clr-psychology;
+    }
+  }
+
+  &__body {
+    margin: 1rem;
+  }
+
+  &__hashtag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $clr-link;
+  }
+
+  &__title {
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+
+  &__description {
+    color: $clr-gray500;
+    font-size: 0.9rem;
+  }
+
+  &__profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+
+    &img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &info {
+      margin-left: 1rem;
+    }
+
+    &name {
+      font-size: 1rem;
+    }
+
+    &followers {
+      color: $clr-gray500;
+      font-size: 0.9rem;
+    }
+  }
+}
